@@ -15,4 +15,5 @@ export class TarefaService {
   obterTasks(): Observable<Tarefa[]> {
     return this.http.get<Tarefa[]>(this.apiUrl);
   }
+
 }

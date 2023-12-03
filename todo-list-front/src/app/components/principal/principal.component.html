@@ -12,13 +12,17 @@
           aria-label="Informe a tarefa que deseja adicionar" aria-describedby="button-addon2">
         <button class="btn btn-outline-dark" type="button" id="button-addon2">Criar Tarefa</button>
 
-        <div class="container mt-5" *ngFor="let tarefa of tarefas">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              {{tarefa.title}}
-            </label>
+
+        <div class="container m-5">
+          <div class="container mt-2" *ngFor="let tarefa of tarefas">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+              <label class="form-check-label" for="flexCheckDefault">
+                {{tarefa.title}}
+              </label>
+            </div>
           </div>
+
         </div>
       </div>
 
